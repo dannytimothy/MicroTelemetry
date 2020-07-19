@@ -10,12 +10,14 @@ app = Flask(__name__)
 
 api = Api(app)
 
+# Set config depending upon environment
+app.config.from_object('project.config.DevelopmentConfig')  # new
 
 class Ping(Resource):
     def get(self):
         return {
             'status': 'success',
-            'message': 'pong!'
+            'message': 'pong!!'
         }
 
 
