@@ -7,10 +7,10 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/usr/src/app
+      - .:/usr/src/app #Pull App Data ub
     ports:
       - 5001:5000
-    environment:
+    environment: 
       - FLASK_APP=project/__init__.py
       - FLASK_ENV=development
-      - APP_SETTINGS=project.config.DevelopmentConfig
+      - APP_SETTINGS=project.config.DevelopmentConfig #Will need to be parameterized later for install pipeline
