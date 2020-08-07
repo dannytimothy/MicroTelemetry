@@ -16,8 +16,8 @@ ENV PYTHONUNBUFFERED 1
 
 # add and install requirements
 COPY ./requirements.txt .
-RUN pip install -U pip setuptools
-RUN pip install -r requirements.txt
+RUN pip3 install -U pip setuptools
+RUN pip3 install -r requirements.txt
 
 # add entrypoint.sh
 COPY ./entrypoint.sh /usr/src/app/entrypoint.sh
