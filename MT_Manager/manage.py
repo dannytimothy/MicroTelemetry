@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 # manage.py
 
 
 import sys
 
+=======
+# manage.py hello
+>>>>>>> 946728926bd1a01e520deeb8acc06dc29087bff6
 from flask.cli import FlaskGroup
 
 from project import create_app, db   
@@ -20,5 +24,4 @@ def recreate_db():
     db.session.commit()
 
 
-if __name__ == '__main__':
-    cli()
+if __name__ == '__main__'
