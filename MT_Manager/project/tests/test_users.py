@@ -23,8 +23,6 @@ def test_add_user_invalid_json(test_app, test_database):
     resp = client.post(
         '/users',
         data=json.dumps({
-            'username': 'michael',
-            'email': 'michael@testdriven.io'
         }),
         content_type='application/json',
     )
@@ -38,8 +36,7 @@ def test_add_user_invalid_json_keys(test_app, test_database):
     resp = client.post(
         '/users',
         data=json.dumps({
-            "username":"john",
-            "email": "john@testdriven.io"
+            'email': 'michael@testdriven.io'
             }),
         content_type='application/json',
     )
