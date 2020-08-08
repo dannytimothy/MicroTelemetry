@@ -2,6 +2,8 @@
 
 
 import os
+from project.api.models import User
+
 
 
 def test_development_config(test_app):
